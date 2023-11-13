@@ -1,0 +1,16 @@
+Question 1
+git branch new-branch-name
+or 
+git checkout -b new-branch-name
+
+Question 2
+fast-forward merges only happen if the branch they are commited to have no changes on them already
+
+Question 3
+git checkout
+
+Question 4
+git branch -d
+
+Question 5
+when multiple changes happen to the same file or folder and git can't decide which one to choose
