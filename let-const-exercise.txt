@@ -1,0 +1,14 @@
+const PI = 3.14;
+
+Question 1
+var can be redeclared while let can't be redeclared
+
+Question 2
+var can be reassigned and redeclared while const can't be reassigned or redeclared
+
+Question 3
+let can be reassigned while const can't be reassigned
+
+Question 4
+with var the variable is hoisted to the "top" so u have access to the variable without the value/initialization 
+with let / const this doesn't happen and u don't have access to the variable name before declaration 
