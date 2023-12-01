@@ -8,6 +8,8 @@ function filterOutOdds() {
 // refactored
 const filterOutOddNums = (...nums) => nums.filter(num => num % 2 === 0)
 
+// rest of functions 
+
 function findMin(...nums){
     return Math.min(...nums);
 }
