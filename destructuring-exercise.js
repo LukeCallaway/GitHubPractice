@@ -1,4 +1,4 @@
-/*let facts = {numPlanets: 8, yearNeptuneDiscovered: 1846};
+let facts = {numPlanets: 8, yearNeptuneDiscovered: 1846};
 let {numPlanets, yearNeptuneDiscovered} = facts;
 
 console.log(numPlanets); // 8
@@ -75,7 +75,7 @@ arr[1] = temp;
 
 // refactored
 [arr[0], arr[1]] = [arr[1], arr[0]]
-*/
+
 // race results
 const raceResults = ([first, second, third, ...rest]) => {
     return {
