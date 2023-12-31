@@ -1,0 +1,30 @@
+What is HTTP?
+    HTTP or hypertext transfer protocol is the protocol for transmitting hypermedia documents such as html
+
+What is a URL?
+    URL or uniform resource locator is a string that specifies where a resource can be found on the internet
+
+What is DNS?
+    DNS or domain name system is a hierarchical naming system for internet connected resources
+    a main feature of dns is to turn human readable urls and turn them into ip addresses
+
+What is a query string?
+    The query string is part of the url the assigns values to specified parameters
+
+What are two HTTP verbs and how are they differnt?
+    Get and Post are two of the HTTP verbs
+    Get is a request that doesn't have any "side effects" like changing server data 
+    Post is a request that does have "side effects" like changing server data
+
+What is an http request?
+    an http request is a request from a client to access a resource ,like a web page, located on a server
+
+What is an http response?
+    an http response provides the client with the resource is had requested 
+
+What is an http header?
+    the header holds additional context and metadata about the request or response
+    examples include the date, the request method, status code, content type, and content length
+
+What are the processes that happen when you type "http://aWebpage.com/some/page.html" into a browser
+    dns takes the web page name and turns it into an ip address, a request is made to that ip address, the server then sends a response, the dom is loaded awith all of the content, seperate request are made for any additional material from the dom
