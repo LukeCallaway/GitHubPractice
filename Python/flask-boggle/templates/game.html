@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boggle Game</title>
+    <link rel="stylesheet" href="static/app.css">
+</head>
+<body>
+    <h1>Play Boggle!</h1>
+
+    <form id="guess-form" method="POST">
+        <input name="guess-input" id="guess-input" type="text" placeholder="Submit Answer!">
+        <button id="guess-button">Submit</button>
+    </form>
+
+    <div id="word-check-div">
+        <h3 id="word-check">Your guess is ???</h3>
+    </div>
+
+    <div id="game-board">
+        {% for lst in game_board %}
+        {% for idx in lst %}
+                {{idx}}
+            {% endfor %}
+                <br>
+            {% endfor %}
+    </div>
+
+    <div id="total-score-div">
+        <h3 id="score-header">Total Score</h3>
+        <h3 id="total-score">0</h3>
+    </div>
+
+    <div id="timer">
+        <h3>Time Remaining</h3>
+        <h3 id="time-remaining">60</h3>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="static/app.js"></script>
+</body>
+</html>
