@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{user.first_name}} {{user.last_name}}'s Page{% endblock %}
+
+{% block content %}
+
+<h1>{{user.first_name}} {{user.last_name}}</h1>
+
+<form action="/users/{{user.id}}/edit">
+    <button>Edit</button>
+</form>
+<form action="/users/{{user.id}}/delete" method="POST">
+    <button>Delete</button>
+</form>
+
+<div>
+    <h2>{{user.first_name}}'s Posts</h2>
+    <form action="/users/{{user.id}}/posts/new">
+        <button>Add Post</button>
+    </form>
+    <ul>
+    {% for post in posts %}
+    <li><a href="/post/{{post.id}}">{{post.title}}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}
