@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pet.name}}'s page</title>
+</head>
+<body>
+    <img src="{{pet.photo_url}}" alt="photo of a {{pet.species}}">
+    <div>
+        <h3>Hello my name is {{pet.name}}! I am a {{pet.species}},
+        and I am {{pet.age}} years old. </h3>
+        <h3>Notes About Pet</h3>
+        {{pet.notes}}
+    </div>
+    <h2>Edit Pet Form</h2>
+    <form action="/{{pet.id}}" method="POST">
+        {{ form.hidden_tag() }}
+        {% for field in form if field.widget.input_type != 'hidden' %}
+        <div>
+            {{field.label}}
+            {{field}}
+        </div>
+        {% endfor %}
+        <button>Edit Pet</button>
+    </form>
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 lib/
 spec/
 src/
@@ -32,3 +33,16 @@ SQL/sql-joins-demo/
 SQL/sql-ddl-demo/
 SQL/sqla-intro-demo/
 SQL/sqla-intro/
+SQL/sqla-associations-demo/
+SQL/sqla-exercise/venv/lib/python3.10/site-packages/sqlalchemy/testing/
+flask-boggle/
+flask-madlibs/
+flask-survey/
+forex-converter/
+integration-testing-demo/
+intermediate-flask/flask-cupcakes/venv/lib/python3.10/site-packages/sqlalchemy/testing/
+intermediate-flask/wtforms-exercise/venv/lib/python3.10/site-packages/sqlalchemy/testing/
+prob-divide-conquer/
+testing/
+SQL/sqla-exercise/venv/
+SQL/sqla-exercise/__pycache__/

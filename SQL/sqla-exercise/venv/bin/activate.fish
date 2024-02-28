@@ -33,7 +33,11 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/luke/Springboard/SQL/sqla-exercise/venv"
+=======
+set -gx VIRTUAL_ENV "/home/lacallaway98/Springboard/SQL/sqla-exercise/venv"
+>>>>>>> develop
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

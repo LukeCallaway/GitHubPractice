@@ -8,7 +8,11 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 setenv VIRTUAL_ENV "/home/luke/Springboard/SQL/sqla-exercise/venv"
+=======
+setenv VIRTUAL_ENV "/home/lacallaway98/Springboard/SQL/sqla-exercise/venv"
+>>>>>>> develop
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
