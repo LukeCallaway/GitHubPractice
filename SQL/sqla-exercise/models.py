@@ -115,3 +115,4 @@ class PostTag(db.Model):
         primary_key = True,
         nullable = False
     )
+
