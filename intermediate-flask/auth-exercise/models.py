@@ -18,7 +18,7 @@ class User(db.Model):
 
     username = db.Column(
         db.String(20),
-        primary_key = True
+        primary_key = True,
     )
 
     password = db.Column(
