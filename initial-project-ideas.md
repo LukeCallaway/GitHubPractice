@@ -23,8 +23,8 @@ make a list of movies to watch like best movie every year, top 25 highest rated 
 view each others saved lists
 
 Potential APIs\
-1 https://www.omdbapi.com/
-2 https://developer.themoviedb.org/docs/getting-started
+1 https://www.omdbapi.com/ \
+2 https://developer.themoviedb.org/docs/getting-started \
 3 https://api.watchmode.com/
 
 watchmode also offers data on where to watch a certain movie could add that on to the pages that have movie info
@@ -39,7 +39,7 @@ favorites / personal favorites / random recipe to try based on selected filters
 Potential APIs\
 1 https://www.themealdb.com/api.php \
 2 https://developer.edamam.com/edamam-docs-recipe-api \
-3 https://spoonacular.com/food-api \
+3 https://spoonacular.com/food-api 
 
 Project Idea 3\
 using a music based api to search for different songs\
@@ -52,4 +52,4 @@ view each others saved lists
 Potential APIs\
 1 https://www.theaudiodb.com/api_guide.php \
 2 https://developer.musixmatch.com/ \
-3 https://developer.musixmatch.com/ \
+3 https://developer.musixmatch.com/ 
