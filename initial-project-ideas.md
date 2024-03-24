@@ -20,26 +20,26 @@ save them as favorites\
 personal rankings?\
 populate reccomendations based on actors, genre etc\
 make a list of movies to watch like best movie every year, top 25 highest rated of the 2000s, top 5 from x year, etc\
-view each others saved lists\
+view each others saved lists
 
 Potential APIs\
 1 https://www.omdbapi.com/
 2 https://developer.themoviedb.org/docs/getting-started
 3 https://api.watchmode.com/
 
-watchmode also offers data on where to watch a certain movie could add that on to the pages that have movie info\
+watchmode also offers data on where to watch a certain movie could add that on to the pages that have movie info
 
 Project Idea 2\
 using a food based api to search for different recipes\
 can use various filters like dietary restrictions, prefernce etc (can further be broken down into bkfst lunch din snacks)\
 a meal plan for everyday of the week / month \
 a gathering of ingredients for everything that the meal plan has on it (a grocery list)\
-favorites / personal favorites / random recipe to try based on selected filters\ 
+favorites / personal favorites / random recipe to try based on selected filters
 
 Potential APIs\
-1 https://www.themealdb.com/api.php
-2 https://developer.edamam.com/edamam-docs-recipe-api
-3 https://spoonacular.com/food-api
+1 https://www.themealdb.com/api.php \
+2 https://developer.edamam.com/edamam-docs-recipe-api \
+3 https://spoonacular.com/food-api \
 
 Project Idea 3\
 using a music based api to search for different songs\
@@ -47,9 +47,9 @@ save them as favorites\
 personal playlists?\
 populate reccomendations based on previous songs u liked, artists, genre etc\
 make a list of music to listene to based on favorites, top songs of the 2000s, highest rated song from every year etc\
-view each others saved lists\
+view each others saved lists
 
 Potential APIs\
-1 https://www.theaudiodb.com/api_guide.php
-2 https://developer.musixmatch.com/
-3 https://developer.musixmatch.com/
+1 https://www.theaudiodb.com/api_guide.php \
+2 https://developer.musixmatch.com/ \
+3 https://developer.musixmatch.com/ \
