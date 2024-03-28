@@ -52,4 +52,4 @@ view each others saved lists
 Potential APIs\
 1 https://www.theaudiodb.com/api_guide.php \
 2 https://developer.musixmatch.com/ \
-3 https://developer.musixmatch.com/ 
+3 https://www.last.fm/api
