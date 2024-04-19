@@ -39,8 +39,12 @@ router.post('/', async (req, res, next) => {
 router.put('/:id', async (req, res, next) => {
     try {
       const { id } = req.params;
-      const { comp_code, amt, paid, add_date, paid_date } = req.body;
-      const results = await db.query('UPDATE invoices SET comp_code=$1, amt=$2, paid=$3, add_date=$4, paid_date=$5 WHERE id=$6 RETURNING *', [comp_code, amt, paid, add_date, paid_date, id])
+      const {amt, paid} = req.body;
+      let paidDate = new Date();
+      if(paid === 'f'){
+        paidDate = null;
+      }
+      const results = await db.query(`UPDATE invoices SET amt=$1, paid=$2, paid_date= $4 WHERE id=$3 RETURNING *`, [amt, paid, id, paidDate])
       if (results.rows.length === 0) {
         throw new ExpressError(`Can't update invoice with id of ${id}`, 404)
       }
@@ -52,7 +56,7 @@ router.put('/:id', async (req, res, next) => {
 
 router.delete('/:id', async (req, res, next) => {
     try {
-      const results = db.query('DELETE FROM companies WHERE id = $1', [req.params.id])
+      const results = db.query('DELETE FROM invoices WHERE id = $1', [req.params.id])
       return res.send({ status: "DELETED!" })
     } catch (e) {
       return next(e)

@@ -5,6 +5,7 @@ const { Client } = require('pg');
 // added password file to .gitignore
 const myPassword = require('./myPassword')
 
+
 let DB_URI;
 
 if (process.env.NODE_ENV === 'test'){
