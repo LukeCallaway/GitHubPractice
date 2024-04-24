@@ -8,7 +8,7 @@ const { authenticateJWT, ensureLoggedIn, ensureCorrectUser } = require('../middl
  * => {users: [{username, first_name, last_name, phone}, ...]}
  *
  **/
-router.get('/', async (req, res, next) => {
+router.get('/', ensureLoggedIn, async (req, res, next) => {
     try{
         results = await User.all()
         return res.json(results)
@@ -22,7 +22,7 @@ router.get('/', async (req, res, next) => {
  * => {user: {username, first_name, last_name, phone, join_at, last_login_at}}
  *
  **/
-router.get('/:username', async (req, res, next) => {
+router.get('/:username', ensureCorrectUser, async (req, res, next) => {
     try{
         const { username } = req.params;
         results = await User.get(username)
@@ -41,7 +41,7 @@ router.get('/:username', async (req, res, next) => {
  *                 from_user: {username, first_name, last_name, phone}}, ...]}
  *
  **/
-router.get('/:username/to', authenticateJWT, ensureLoggedIn, ensureCorrectUser, async (req, res, next) => {
+router.get('/:username/to', ensureCorrectUser, async (req, res, next) => {
     try{
         const { username } = req.params;
         results = await User.messagesTo(username)
@@ -62,7 +62,7 @@ router.get('/:username/to', authenticateJWT, ensureLoggedIn, ensureCorrectUser, 
  *
  **/
 
-router.get('/:username/from', authenticateJWT, ensureLoggedIn, ensureCorrectUser, async (req, res, next) => {
+router.get('/:username/from', ensureCorrectUser, async (req, res, next) => {
     try{
         const { username } = req.params;
         results = await User.messagesFrom(username)

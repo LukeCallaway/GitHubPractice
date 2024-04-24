@@ -17,7 +17,7 @@ const Message = require('../models/user')
  *
  **/
 
-router.get('/:id', authenticateJWT, ensureLoggedIn, ensureCorrectUser, async (req,res,next) => {
+router.get('/:id', ensureLoggedIn, async (req,res,next) => {
     try{
         const { id } = req.params;
         results = await Message.get(id)
@@ -34,7 +34,7 @@ router.get('/:id', authenticateJWT, ensureLoggedIn, ensureCorrectUser, async (re
  *   {message: {id, from_username, to_username, body, sent_at}}
  *
  **/
-router.post('/', authenticateJWT, ensureLoggedIn, ensureCorrectUser, async (req,res,next) => {
+router.post('/', ensureLoggedIn, async (req,res,next) => {
     try{
         const { id } = req.params;
         const { from_username, to_username, body, sent_at } = req.body;
@@ -53,7 +53,7 @@ router.post('/', authenticateJWT, ensureLoggedIn, ensureCorrectUser, async (req,
  *
  **/
 
-router.post('/:id/read', authenticateJWT, ensureLoggedIn, ensureCorrectUser, async (req,res,next) => {
+router.post('/:id/read', ensureCorrectUser, async (req,res,next) => {
     try{
         const { id } = req.params;
         const { read_at } = req.body;
