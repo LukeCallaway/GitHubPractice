@@ -14,7 +14,7 @@ const SECRET_KEY = process.env.SECRET_KEY || "secret";
 
 const BCRYPT_WORK_FACTOR = 12;
 
-const myPassword = 'G_Kittle85'
+const myPassword =''
 
 module.exports = {
   DB_URI,
