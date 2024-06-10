@@ -1,7 +1,7 @@
 
 lib/
 spec/
-src/
+
 SpecRunner.html
 taxes.js
 taxes.test.js
