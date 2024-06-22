@@ -37,10 +37,10 @@ function DeckOfCards() {
   return (
     <div>
         <button onClick={() => shuffleDeck()}>Shuffle Deck</button>
-            {remaining > 0 ? 
-                <button onClick={() => drawCard()}>Draw Card!</button>
-                : 'No Cards Remaining'
-            }
+        {remaining > 0 ? 
+            <button onClick={() => drawCard()}>Draw Card!</button>
+            : 'No Cards Remaining'
+        }
         <ol>{
             cards.length ? 
                 cards.map(c => <Card value={c[1]} suit={c[0]} />) 
