@@ -1,0 +1,91 @@
+    Step 1
+Question 1
+O(n)
+
+Question 2
+O(n)
+
+Question 3
+O(1)
+
+Question 4
+O(n^3)
+
+Question 5
+O(n)
+
+Question 6
+O(n)
+
+Question 7
+O(n log n)
+
+Question 8
+O(2^n)
+
+Question 9
+O(1)
+
+Question 10
+O(n^2)
+
+    Step 2
+
+func 1
+O(n)
+
+func 2
+O(n)
+
+func 3
+O(1)
+
+func 4 
+O(n)
+
+func 5
+O(n^2)
+
+func 6
+O(n)
+
+    Part 3
+
+Question 1
+true
+
+Question 2
+true
+
+Question 3
+false
+
+Question 4
+O(n)
+
+Question 5
+O(n)
+
+Question 6
+O(n)
+
+Question 7
+O(n log n)
+
+Question 8
+O(n)
+
+Question 9
+O(1)
+
+Question 10
+O(n)
+
+Question 11
+O(1)
+
+Question 12
+O(n)
+
+bonus Question
+O(n) 
