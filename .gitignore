@@ -25,7 +25,9 @@ Python/Venv-practice/
 Python/class-practice.py
 Python/Flask-Practice/
 Python/flask-greet-calc/greet/venv
+Python/flask-greet-calc/greet/__pycache__
 Python/flask-greet-calc/calc/venv
+Python/flask-greet-calc/calc/__pycache__
 SQL/library.sql
 SQL/sql-joins-demo/
 SQL/sql-ddl-demo/
@@ -72,3 +74,4 @@ venv/
 __pycache__/
 node_modules/
 **node_modules/
+React/node_modules/
